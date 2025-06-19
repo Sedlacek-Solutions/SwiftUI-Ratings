@@ -5,7 +5,7 @@
 //
 
 import Foundation
-import SwiftUICore
+import SwiftUI
 
 extension Date {
     /// Returns a localized relative time string using the LocalizedStringKey extension
