@@ -4,7 +4,7 @@
 //  Created by James Sedlacek on 2/1/25.
 //
 
-import SwiftUICore
+import SwiftUI
 
 @MainActor
 extension LocalizedStringKey {
