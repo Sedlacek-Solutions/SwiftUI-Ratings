@@ -46,7 +46,7 @@ To integrate RatingsKit into your Xcode project using Swift Package Manager, add
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/Sedlacek-Solutions/RatingsKit.git", from: "1.0.1")
+    .package(url: "https://github.com/Sedlacek-Solutions/RatingsKit.git", from: "1.1.1")
 ]
 ```
 
