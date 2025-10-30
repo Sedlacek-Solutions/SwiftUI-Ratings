@@ -1,6 +1,6 @@
-# Using RatingsKit with Supabase and App Store Connect API
+# Using SwiftUI-Ratings with Supabase and App Store Connect API
 
-This guide explains how to create a Supabase Edge Function that fetches app ratings and reviews from the App Store Connect API and formats the data for use with RatingsKit.
+This guide explains how to create a Supabase Edge Function that fetches app ratings and reviews from the App Store Connect API and formats the data for use with SwiftUI-Ratings.
 
 ## Prerequisites
 
@@ -64,7 +64,7 @@ serve(async (req) => {
     
     const appStoreData = await response.json()
     
-    // Transform the data to match RatingsKit's expected format
+    // Transform the data to match SwiftUI-Ratings's expected format
     const reviews = appStoreData.data.map(review => ({
       title: review.attributes.title,
       content: review.attributes.body,
@@ -79,7 +79,7 @@ serve(async (req) => {
       ? reviews.reduce((sum, review) => sum + review.rating, 0) / totalRatings
       : 0
     
-    // Return the data in the format expected by RatingsKit
+    // Return the data in the format expected by SwiftUI-Ratings
     return new Response(JSON.stringify({
       averageRating,
       totalRatings,
@@ -145,7 +145,7 @@ struct SupabaseAppRatingProvider: AppRatingProviding {
 }
 ```
 
-## Using the Supabase Provider with RatingsKit
+## Using the Supabase Provider with SwiftUI-Ratings
 
 ```swift
 let provider = SupabaseAppRatingProvider(

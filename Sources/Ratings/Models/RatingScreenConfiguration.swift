@@ -1,6 +1,6 @@
 //
 //  RatingScreenConfiguration.swift
-//  RatingsKit
+//  Ratings
 //
 //  Created by Alpay Calalli on 11.03.25.
 //
