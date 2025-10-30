@@ -1,4 +1,4 @@
-# RatingsKit
+# SwiftUI-Ratings
 
 A Swift Package that provides an elegant and customizable ratings interface for your iOS and macOS applications.
 
@@ -22,7 +22,7 @@ A Swift Package that provides an elegant and customizable ratings interface for 
 
 ## Overview
 
-RatingsKit makes it easy to add a ratings and review system to your application. It offers a complete UI for displaying app ratings and reviews, and provides a streamlined way for users to submit their ratings to the App Store.
+SwiftUI-Ratings makes it easy to add a ratings and review system to your application. It offers a complete UI for displaying app ratings and reviews, and provides a streamlined way for users to submit their ratings to the App Store.
 
 ## Features
 
@@ -42,11 +42,11 @@ RatingsKit makes it easy to add a ratings and review system to your application.
 
 ### Swift Package Manager
 
-To integrate RatingsKit into your Xcode project using Swift Package Manager, add it to your `Package.swift` file:
+To integrate SwiftUI-Ratings into your Xcode project using Swift Package Manager, add it to your `Package.swift` file:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/Sedlacek-Solutions/RatingsKit.git", from: "1.0.1")
+    .package(url: "https://github.com/Sedlacek-Solutions/SwiftUI-Ratings.git", from: "1.0.1")
 ]
 ```
 
@@ -58,7 +58,7 @@ Or add it directly via Xcode's Package Manager integration.
 
 ```swift
 import SwiftUI
-import RatingsKit
+import Ratings
 
 struct RatingsView: View {
     var body: some View {
@@ -99,7 +99,7 @@ struct YourAppRatingProvider: AppRatingProviding {
 
 ### Using the Mock Provider
 
-RatingsKit comes with a `MockAppRatingProvider` for testing and UI development:
+SwiftUI-Ratings comes with a `MockAppRatingProvider` for testing and UI development:
 
 ```swift
 RatingRequestScreen(
@@ -116,11 +116,11 @@ Available mock configurations:
 
 ### Using with Supabase and App Store Connect API
 
-For detailed instructions on how to create a Supabase Edge Function that fetches data from the App Store Connect API for use with RatingsKit, see our [Supabase Implementation Guide](SUPABASE-GUIDE.md).
+For detailed instructions on how to create a Supabase Edge Function that fetches data from the App Store Connect API for use with SwiftUI-Ratings, see our [Supabase Implementation Guide](SUPABASE-GUIDE.md).
 
 ## Customization
 
-RatingsKit provides a flexible way to tailor the ratings interface through two main customizers: the configuration settings and the screen initializer.
+SwiftUI-Ratings provides a flexible way to tailor the ratings interface through two main customizers: the configuration settings and the screen initializer.
 
 1. RatingScreenConfiguration  
 This struct allows you to customize the visual and textual components of the rating screen. Its initializer provides the following properties:

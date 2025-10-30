@@ -4,17 +4,17 @@
 import PackageDescription
 
 let package = Package(
-    name: "RatingsKit",
+    name: "SwiftUI-Ratings",
     defaultLocalization: "en",
     platforms: [.iOS(.v17), .macOS(.v14)],
     products: [
         .library(
-            name: "RatingsKit",
-            targets: ["RatingsKit"]),
+            name: "Ratings",
+            targets: ["Ratings"]),
     ],
     targets: [
         .target(
-            name: "RatingsKit",
+            name: "Ratings",
             resources: [
                 .process("Media.xcassets")
             ]
